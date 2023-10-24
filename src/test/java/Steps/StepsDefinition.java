@@ -86,7 +86,17 @@ public class StepsDefinition {
     @Then("User added a new table row")
     public void userAddedANewTableRow() {
 
+        webTablesPage.clickOnAddButton();
 
+        webTablesPage.inputFirstName("Tamara");
+        webTablesPage.inputLastName("Velickovic");
+        webTablesPage.inputEmail("mail@mail.com");
+
+        webTablesPage.inputAge("30");
+        webTablesPage.inputSalary("100");
+        webTablesPage.inputDepartment("QA");
+
+        webTablesPage.clickOnSubmitButton();
 
 
     }
